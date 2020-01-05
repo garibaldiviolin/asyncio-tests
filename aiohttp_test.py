@@ -1,3 +1,4 @@
+# aiohttp_test.py
 from aiohttp import ClientSession
 
 import asyncio
@@ -29,6 +30,7 @@ def print_responses(result):
     print(result)
 
 
+# Main application
 loop = asyncio.get_event_loop()
 s = time.perf_counter()
 future = asyncio.ensure_future(run(1_000_000, 1_001_000))
